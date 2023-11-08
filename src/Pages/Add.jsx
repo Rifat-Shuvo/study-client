@@ -18,7 +18,7 @@ const Add = () => {
         // console.log(title,thumbnail,total, date, description);
         const newAssignment = { title, thumbnail, total, date, description, difficulty,useremail }
         // console.log(newAssignment);
-        fetch('http://localhost:5000/allassign', {
+        fetch('https://studyserver.vercel.app/allassign', {
             method: 'POST',
             
             headers: {

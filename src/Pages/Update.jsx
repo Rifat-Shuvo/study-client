@@ -20,7 +20,7 @@ const Add = () => {
         // console.log(title,thumbnail,total, date, description);
         const updatedAssignment = { title, thumbnail, total, date, description, difficulty,useremail }
         // console.log(newAssignment);
-        fetch(`http://localhost:5000/update/${update._id}`, {
+        fetch(`https://studyserver.vercel.app/update/${update._id}`, {
             method: 'PUT',
             
             headers: {

@@ -14,7 +14,7 @@ const {user} = useContext(AuthContext)
         const status = 'submitted'
         const take = {name,link,notes,takemail,status}
         
-        fetch('http://localhost:5000/taken', {
+        fetch('https://studyserver.vercel.app/taken', {
             method: 'POST',
             
             headers: {

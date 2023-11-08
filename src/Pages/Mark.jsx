@@ -13,7 +13,7 @@ const Mark = () => {
          const notes = form.notes.value
          const status = 'completed'
          const updateMarks = {name,mark,notes,status,takemail}
-         fetch(`http://localhost:5000/mark/${mars._id}`,{
+         fetch(`https://studyserver.vercel.app/mark/${mars._id}`,{
             method: 'PUT',
             
             headers: {

@@ -40,17 +40,17 @@ const Routes = createBrowserRouter([
             {
                 path:'/all',
                 element: <AllAssignment></AllAssignment>,
-                loader: () => fetch('http://localhost:5000/allassign')
+                loader: () => fetch('https://studyserver.vercel.app/allassign')
             },
             {
                 path: '/detail/:id',
                 element: <PrivateRoutes><Details></Details></PrivateRoutes>,
-                loader : ({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+                loader : ({params})=> fetch(`https://studyserver.vercel.app/details/${params.id}`)
             },
             {
                 path: '/update/:id',
                 element: <PrivateRoutes><Update></Update></PrivateRoutes>,
-               loader : ({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+               loader : ({params})=> fetch(`https://studyserver.vercel.app/details/${params.id}`)
             },
             {
                 path:'/take',
@@ -59,12 +59,12 @@ const Routes = createBrowserRouter([
             {
                 path: '/submitted',
                 element:<PrivateRoutes><Submitted></Submitted></PrivateRoutes>,
-                loader : ()=> fetch('http://localhost:5000/takens')
+                loader : ()=> fetch('https://studyserver.vercel.app/takens')
             },
             {
                 path: '/mark/:id',
                 element:<Mark></Mark>,
-                loader : ({params})=> fetch(`http://localhost:5000/mark/${params.id}`)
+                loader : ({params})=> fetch(`https://studyserver.vercel.app/mark/${params.id}`)
             }
             
         ]

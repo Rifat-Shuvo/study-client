@@ -12,7 +12,7 @@ const AllAssignment = () => {
     const handleDelete = (_id, email) => {
         console.log(_id, email)
 
-        fetch(`http://localhost:5000/assign/${_id}/${email}`,{
+        fetch(`https://studyserver.vercel.app/assign/${_id}/${email}`,{
             method : 'DELETE',
             
         })
