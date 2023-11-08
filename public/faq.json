@@ -1,0 +1,27 @@
+[
+    {"id":1,
+      "question": "What is the difference between your study site and other study sites?",
+      "answer": "Our study site is different from other study sites because it offers a personalized learning experience. We create personalized learning plans based on your individual needs and goals. We also provide you with a comprehensive library of resources and expert support. Additionally, our site tracks your progress and provides you with feedback so you can see how you're doing and identify areas where you need to improve."
+    },
+    {"id":2,
+      "question": "How do I create an account on your study site?",
+      "answer": "To create an account on our study site, simply visit our website and click on the 'Join Now' button. You will be asked to provide your name, email address, and password. Once you have created an account, you can log in and start studying!"
+    },
+    {"id":3,
+      "question": "What kind of resources do you offer on your study site?",
+      "answer": "We offer a comprehensive library of resources on our study site, including practice problems, video tutorials, and study guides. We also offer a variety of interactive learning modules that allow you to learn at your own pace and in a way that works best for you."
+    },
+    {"id":4,
+      "question": "How can I get help from an expert on your study site?",
+      "answer": "We offer expert support from experienced educators who are available to answer your questions and help you learn. You can get help from an expert by posting a question in our forum or by contacting us directly."
+    },
+    {"id":5,
+      "question": "How do I track my progress on your study site?",
+      "answer": "Our site tracks your progress and provides you with feedback so you can see how you're doing and identify areas where you need to improve. You can view your progress report by clicking on the 'My Assignment' tab in your account settings."
+    },
+    {"id":6,
+      "question": "How can I collaborate with other students on your study site?",
+      "answer": "Our site provides you with collaboration tools so you can study with friends and classmates and share ideas. You can create study groups, share notes, and discuss topics with your peers."
+    }
+  ]
+  

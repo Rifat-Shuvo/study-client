@@ -1,0 +1,32 @@
+[
+    {"id":1,
+      "title": "Interactive Learning",
+      "description": "Our study site features interactive learning modules that allow you to learn at your own pace and in a way that works best for you."
+    },
+    {
+      "id":2,
+      "title": "Personalized Learning Plans",
+      "description": "Our site creates personalized learning plans based on your individual needs and goals. This helps you stay on track and make the most of your study time."
+    },
+    {
+      "id":3,
+      "title": "Comprehensive Resources",
+      "description": "Our site provides you with access to a comprehensive library of resources, including practice problems, video tutorials, and study guides."
+    },
+    {
+      "id":4,
+      "title": "Expert Support",
+      "description": "Our site offers expert support from experienced educators who are available to answer your questions and help you learn."
+    },
+    {
+      "id":5,
+      "title": "Progress Tracking",
+      "description": "Our site tracks your progress and provides you with feedback so you can see how you're doing and identify areas where you need to improve."
+    },
+    {
+      "id":6,
+      "title": "Collaboration Tools",
+      "description": "Our site provides you with collaboration tools so you can study with friends and classmates and share ideas."
+    }
+  ]
+  

@@ -1,0 +1,75 @@
+import React from 'react';
+import { createBrowserRouter } from 'react-router-dom';
+
+import Root from '../Root';
+import Home from '../Pages/Home';
+import Login from '../Pages/Login';
+import Register from '../Pages/Register';
+import Add from '../Pages/Add';
+import PrivateRoutes from '../Providers/PrivateRoutes';
+import AllAssignment from '../Pages/AllAssignment';
+import Details from '../Pages/Details';
+import Update from '../Pages/Update';
+import Take from '../Pages/Take';
+import Submitted from '../Pages/Submitted';
+import Mark from '../Pages/Mark';
+
+
+
+const Routes = createBrowserRouter([
+    {
+        path: '/',
+        element: <Root></Root>,
+        children:[
+            {
+                path:'/',
+                element: <Home></Home>
+            },
+            {
+                path:'/login',
+                element: <Login></Login>
+            },
+            {
+                path:'/register',
+                element:<Register></Register>
+            },
+            {
+                path:'/addnew',
+                element: <PrivateRoutes><Add></Add></PrivateRoutes>
+            },
+            {
+                path:'/all',
+                element: <AllAssignment></AllAssignment>,
+                loader: () => fetch('http://localhost:5000/allassign')
+            },
+            {
+                path: '/detail/:id',
+                element: <PrivateRoutes><Details></Details></PrivateRoutes>,
+                loader : ({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+            },
+            {
+                path: '/update/:id',
+                element: <PrivateRoutes><Update></Update></PrivateRoutes>,
+               loader : ({params})=> fetch(`http://localhost:5000/details/${params.id}`)
+            },
+            {
+                path:'/take',
+                element : <PrivateRoutes><Take></Take></PrivateRoutes>
+            },
+            {
+                path: '/submitted',
+                element:<PrivateRoutes><Submitted></Submitted></PrivateRoutes>,
+                loader : ()=> fetch('http://localhost:5000/takens')
+            },
+            {
+                path: '/mark/:id',
+                element:<Mark></Mark>,
+                loader : ({params})=> fetch(`http://localhost:5000/mark/${params.id}`)
+            }
+            
+        ]
+    },
+    
+])
+
+export default Routes;
