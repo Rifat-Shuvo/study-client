@@ -1,3 +1,15 @@
+# Some of project Features
+
+*** The site is super interactive
+*** The UI Of This site is very nice and user friendly
+*** All the necessary Function is implemented here sucessfully
+*** The site is useful for study institutions
+*** The code of this site is readable.
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
