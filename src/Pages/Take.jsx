@@ -7,7 +7,7 @@ const {user} = useContext(AuthContext)
     const handleTake = (e)=>{
         e.preventDefault()
         const form = e.target
-        // const name = form.name.value
+        const name = form.name.value
         const link = form.link.value
         const notes = form.notes.value
         const takemail =  user.email
