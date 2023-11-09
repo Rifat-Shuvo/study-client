@@ -13,7 +13,7 @@ const Add = () => {
         const total = form.total.value
         const difficulty = form.difficulty.value
         const date = form.date.value
-        const description = form.description.value
+        // const description = form.description.value
         const useremail = user.email
         // console.log(title,thumbnail,total, date, description);
         const newAssignment = { title, thumbnail, total, date, description, difficulty,useremail }
