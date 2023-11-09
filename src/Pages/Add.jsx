@@ -11,7 +11,7 @@ const Add = () => {
         const title = form.title.value
         const thumbnail = form.thumbnail.value
         const total = form.total.value
-        const difficulty = form.difficulty.value
+        // const difficulty = form.difficulty.value
         const date = form.date.value
         const description = form.description.value
         const useremail = user.email
