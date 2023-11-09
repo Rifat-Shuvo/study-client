@@ -6,6 +6,7 @@
 *** The site is useful for study institutions
 *** The code of this site is readable.
 
+# live site link: https://studyh-3f60b.web.app/
 
 
 
