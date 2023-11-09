@@ -10,7 +10,7 @@ const {user} = useContext(AuthContext)
         const name = form.name.value
         const link = form.link.value
         const notes = form.notes.value
-        const takemail =  user.email
+        // const takemail =  user.email
         const status = 'submitted'
         const take = {name,link,notes,takemail,status}
         
