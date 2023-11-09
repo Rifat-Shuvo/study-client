@@ -41,7 +41,7 @@ const {user} = useContext(AuthContext)
                
                 <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
                     <form onSubmit={handleTake} className="card-body">
-                    <h1 className="text-center text-2xl font-bold text-rose-600">Login Now</h1>
+                    <h1 className="text-center text-2xl font-bold text-rose-600">Submit Your Assignment</h1>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Assignment Name</span>

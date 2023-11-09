@@ -13,6 +13,7 @@ import Update from '../Pages/Update';
 import Take from '../Pages/Take';
 import Submitted from '../Pages/Submitted';
 import Mark from '../Pages/Mark';
+import Error from '../Pages/Error';
 
 
 
@@ -20,6 +21,7 @@ const Routes = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <Error></Error> ,
         children:[
             {
                 path:'/',
