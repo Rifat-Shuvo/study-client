@@ -8,7 +8,7 @@ const Add = () => {
     const handleAdd = (e) => {
         e.preventDefault()
         const form = e.target
-        // const title = form.title.value
+        const title = form.title.value
         const thumbnail = form.thumbnail.value
         const total = form.total.value
         const difficulty = form.difficulty.value
