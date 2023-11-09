@@ -8,7 +8,7 @@ const {user} = useContext(AuthContext)
         e.preventDefault()
         const form = e.target
         const name = form.name.value
-        // const link = form.link.value
+        const link = form.link.value
         const notes = form.notes.value
         const takemail =  user.email
         const status = 'submitted'
