@@ -19,8 +19,10 @@ const Add = () => {
         const useremail = user.email
         // console.log(title,thumbnail,total, date, description);
         const updatedAssignment = { title, thumbnail, total, date, description, difficulty,useremail }
-        // console.log(newAssignment);
-        fetch(`https://studyserver.vercel.app/update/${update._id}`, {
+        // console.log(update);
+        if (update.useremail === user.email) {
+            console.log(update.useremail);
+            fetch(`https://studyserver.vercel.app/update/${update._id}`, {
             method: 'PUT',
             
             headers: {
@@ -39,6 +41,28 @@ const Add = () => {
                 }
                 console.log(data);
             })
+        } else {
+          toast.error('You are not elegible to update!') 
+        }
+        // fetch(`https://studyserver.vercel.app/update/${update._id}`, {
+        //     method: 'PUT',
+            
+        //     headers: {
+        //         'content-type': 'application/json',
+        //     },
+        //     body: JSON.stringify(updatedAssignment)
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         if (data.acknowledged) {
+        //             // console.log('true');
+        //             toast.success('updateded Assignment Sucessfully')
+        //         }
+        //         else{
+        //             toast.error('Something Wrong.Try again.')
+        //         }
+        //         console.log(data);
+        //     })
     }
     return (
         <div className="hero min-h-screen bg-base-200">
