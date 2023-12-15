@@ -1,14 +1,21 @@
-# Some of project Features
+# Some of project Features (a-11)
 
 *** The site is super interactive
+
 *** The UI Of This site is very nice and user friendly
+
 *** All the necessary Function is implemented here sucessfully
+
 *** The site is useful for study institutions
+
 *** The code of this site is readable.
+
+*** There have a private route where a registered user can get extra previledges.  
 
 # live site link: https://studyh-3f60b.web.app/
 
 
+# Technology: HTML, CSS, React, JavaScript, Tailwind, Daisyui, Firebase.
 
 
 # React + Vite
