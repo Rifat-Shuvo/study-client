@@ -2,17 +2,21 @@ import React, { useState } from 'react';
 import Banner from './Banner';
 import { Link, useLoaderData } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import { useContext } from 'react';
+import { AuthContext } from '../Providers/AuthProvider';
 
 
 const AllAssignment = () => {
+    const {user} = useContext(AuthContext)
     const allDatas = useLoaderData()
     const [allData,setAllData]=useState(allDatas)
-    console.log(allData);
+    // console.log(allData);
 
     const handleDelete = (_id, email) => {
-        console.log(_id, email)
-
-        fetch(`https://studyserver.vercel.app/assign/${_id}/${email}`,{
+        // console.log(_id, email, user.email)
+if (user.email === email) {
+    console.log(email);
+    fetch(`https://studyserver.vercel.app/assign/${_id}/${email}`,{
             method : 'DELETE',
             
         })
@@ -23,6 +27,20 @@ const AllAssignment = () => {
             setAllData(remaining)
             console.log(data);
         })
+}else{
+    toast.error('You do not delete this assignment!')
+}
+        // fetch(`https://studyserver.vercel.app/assign/${_id}/${email}`,{
+        //     method : 'DELETE',
+            
+        // })
+        // .then(res=>res.json())
+        // .then(data=>{
+        //     toast.success('Deleted Successfully')
+        //     const remaining = allData.filter(data => data._id !== _id)
+        //     setAllData(remaining)
+        //     console.log(data);
+        // })
     }
     return (
         <div>
